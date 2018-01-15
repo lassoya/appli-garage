@@ -23,4 +23,23 @@ class Client extends Controller {
     ]);
   }
 
+  public function editAction()
+  {
+    $id = $_GET['id'] ?? null;
+    $client = $this->_clientRepository->find($id);
+
+    return $this->render('client/edit', [
+      'client' => $client,
+    ]);
+  }
+
+  public function saveAction()
+  {
+    $dataClient = $_POST;
+    
+    $this->_clientRepository->save($dataClient);
+
+    $this->redirect('/client');
+  }
+
 }

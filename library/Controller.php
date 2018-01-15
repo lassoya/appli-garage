@@ -6,6 +6,11 @@ use Library\Layout;
 
 abstract class Controller {
 
+  public function redirect(string $path)
+  {
+    header( 'Location: ' . $path );
+  }
+
 
   public function render(string $path, ?array $parameter)
   {

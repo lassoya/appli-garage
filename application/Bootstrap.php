@@ -9,7 +9,7 @@ class Bootstrap {
   {
     $uri = explode('/', $_SERVER['REDIRECT_URL']);
     if(count($uri)> 3) {
-      throw new \Exception('The uri is invvalid !');
+      throw new \Exception('The uri is invalid !');
     }
 
     $controller = strlen($uri[1]) > 0 ? $uri[1] : 'home';
