@@ -8,8 +8,7 @@ class Home extends Controller {
 
   public function indexAction()
   {
-
-    return $this->render('index', [ 'name' => 'Samueloo']);
+    return $this->render('home/index', []);
   }
 
 }
