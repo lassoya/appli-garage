@@ -2,9 +2,9 @@
 
 namespace Application\Controller;
 
-use Application\Controller\Controller;
+use Library\Controller;
 
-class Home extends Controller{
+class Home extends Controller {
 
   public function indexAction()
   {
