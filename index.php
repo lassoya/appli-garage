@@ -3,7 +3,7 @@ namespace Application;
 
 use Application\Bootstrap;
 
-session_start();
+//session_start();
 
 require_once 'application/autoloader.php';
 Autoloader::register();
